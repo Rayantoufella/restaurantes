@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+
+    font-family : "Poppins" , sans-serif;
+}
+
+:root {
+    --primary-color : #300c0c;
+    --secondary-color : #1cc88a;
+    --success-color : #36b9cc;
+    --danger-color : #e74a3b;
+    --warning-color : #f6c23e;
+    --info-color : #858796;
+    --light-color : #f8f9fc;
+    --dark-color : #5a5c69;
+
+    --font-color : #333333;
+}
+
+header {
+    background-color: var(--primary-color);
+
+}
