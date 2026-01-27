@@ -17,11 +17,126 @@
     --info-color : #858796;
     --light-color : #f8f9fc;
     --dark-color : #5a5c69;
+    --white-color : rgb(255, 255, 255); 
 
     --font-color : #333333;
 }
 
-header {
-    background-color: var(--primary-color);
+
+
+ul {
+    list-style-type: none ;
+}
+
+a {
+    text-decoration : none ; 
+}
+
+button {
+    cursor: pointer;
+    border : none ;
+    background: none ;
+}
+
+img {
+    width: 100% ; 
 
 }
+
+.section-content {
+    max-width : 1200px ;
+    margin : 0 auto ;
+    padding : 0 20px ;
+}
+
+
+
+
+header {
+    position: fixed ;
+    width: 100% ;
+    background-color: var(--primary-color);
+}
+
+header .nav-bar {
+    position: relative ;
+    width: 200% ;
+    display : flex ;
+    padding: 28px  ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.nav-bar .nav-menu {
+    display: flex ;
+    gap : 15px ;
+    margin-left: auto ;
+}
+.nav-bar .nav-logo .logo-text {
+    color : var(--white-color) ; 
+    font-size : 25px ;
+    font-weight : 600;
+}
+
+.nav-bar .nav-menu .nav-link {
+    padding: 7px 15px ;
+    color : var(--white-color) ;
+    border-radius : 10px ; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.3s; 
+
+
+}
+
+.nav-bar .nav-menu .nav-link:hover {
+    background: #572b11 ;
+    color : var(--white-color) ; 
+    transition : 0.3s ease ;
+}
+
+.hero-section {
+    background-color: #310707;
+   display: flex ;
+   align-items: center ; 
+   min-height: 100vh ;
+   color: var(--white-color);
+}
+
+.hero-section .hero-content {
+    display: flex ;
+    align-items: center ;
+    min-height : 0vh ;
+    color : var(--white-color) ;
+    justify-content: space-between ; 
+
+
+}
+
+.hero-section .hero-detail .title {
+    font-size : 37px ;
+    color: #ad670b;
+    font-weight : 600 ;
+    font-family: 'Miniver', cursive ;
+}
+
+.hero-section .hero-detail .subtitle {
+    margin-top : 20px ;
+    font-size : 18px ;
+    color : var(--light-color) ;
+    max-width: 899px ;
+}
+
+.hero-section .hero-detail .description {
+   max-width : 70% ;
+   margin : 24px 0 40px ;
+   font-size : 16px ;
+}
+
+
+
+
+
+   
