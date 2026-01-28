@@ -40,7 +40,7 @@ button {
 
 img {
     width: 100% ; 
-
+    display: block ;
 }
 
 .section-content {
@@ -55,6 +55,7 @@ img {
 header {
     position: fixed ;
     width: 100% ;
+    z-index :5 ;
     background-color: var(--primary-color);
 }
 
@@ -67,7 +68,6 @@ header .nav-bar {
     justify-content: space-between;
 
 }
-
 
 
 .nav-bar .nav-menu {
@@ -92,10 +92,15 @@ header .nav-bar {
 }
 
 .nav-bar .nav-menu .nav-link:hover {
-    background: #572b11 ;
+    background: #8a502e ;
     color : var(--white-color) ; 
     transition : 0.3s ease ;
 }
+
+.nav-bar :where(.menu-close-btn , .menu-open-btn) {
+    display: none ;
+}
+
 
 .hero-section {
     background-color: #310707;
@@ -133,6 +138,71 @@ header .nav-bar {
    max-width : 70% ;
    margin : 24px 0 40px ;
    font-size : 16px ;
+}
+
+.hero-section .hero-detail .bouton {
+    padding : 12px 26px ; 
+    border : 2px solid transparent ;
+    color : var(--primary-color) ; 
+    border-radius : 20px ;
+    background-color: #8a502e;
+    font-weight: 400;
+    transition : 0.3s ease ;
+    gap : 23px ;
+    cursor: pointer;
+    margin-right: 25px;
+    
+    
+}
+
+.hero-section .hero-detail .bouton:hover , 
+.hero-section .hero-detail .Contacter {
+    color :var(--white-color) ; 
+    border-color: var(--white-color)  ;
+    background : transparent ; 
+
+}
+
+.hero-section .hero-detail .Contacter:hover {
+    color :var(--white-color) ;
+    border-color : #572b11 ;
+    background : #572b11 ;
+}
+
+
+.hero-section .hero-detail .hero-image-wrapper {
+    max-width : 500px ;
+    margin-right: 30px;
+}
+
+@media screen and (max-width:900px){
+
+
+    .nav-bar .nav-menu {
+        display : block ;
+        background : var(--white-color) ;
+        position : fixed ; 
+        left : 0;
+        top: 0 ;
+        width:300px ;     
+        height :100% ;
+        display : flex ;
+        flex-direction : column ;
+        padding-top :100px ;
+        align-items: center;
+
+    }
+    .nav-bar .nav-menu .nav-link {
+        color : var(--dark-color) ;
+        font-size : 20px ;
+        display: block ;
+        margin-top : 13px ;
+
+
+    }
+
+
+
 }
 
 
