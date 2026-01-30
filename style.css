@@ -176,6 +176,27 @@ header .nav-bar {
     margin-right: 30px;
 }
 
+.about-section {
+    padding : 120px 0 ;
+    background-color: #f8f9fc ;
+
+}
+
+.about-section .section-content {
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+
+}
+.about-section .about-image-wrapper .about-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    object-fit: cover;
+    border-radius : 15px ;
+}
+
+
 @media screen and (max-width:900px){
 
     body.show-mobile-menu  header::before {
