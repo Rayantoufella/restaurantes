@@ -247,6 +247,45 @@ header .nav-bar {
     color : #00758a ;
     transition: color 0.3s ease;
 }
+
+
+.menu-section {
+    color : var(--light-color) ; 
+    background-color: var(--dark-color);
+}
+
+
+
+.menu-section .menu-list  {
+    display: flex ; 
+    flex-wrap: wrap ;
+    gap : 110px ;
+    justify-content: space-between ;
+    align-items: center ;
+
+}
+
+.menu-section .menu-list .menu-item {
+    display : flex ; 
+    align-items: center    ;
+    flex-direction: column;
+    justify-content: space-between;
+    width : calc(100% / 3 - 110px);
+    margin 
+}
+
+.menu-section .menu-list .menu-item .menu-image-1 {
+    max-width: 80%;
+    aspect-ratio: 1 / 1    ;
+}
+
+@media screen and (max-width:1024px){
+    .menu-section .menu-list .menu-item {
+
+    }
+}
+
+
 @media screen and (max-width:900px){
 
     body.show-mobile-menu  header::before {
