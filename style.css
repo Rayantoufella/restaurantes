@@ -252,6 +252,7 @@ header .nav-bar {
 .menu-section {
     color : var(--light-color) ; 
     background-color: var(--dark-color);
+    padding : 50px 0 120px  ;
 }
 
 
@@ -271,20 +272,105 @@ header .nav-bar {
     flex-direction: column;
     justify-content: space-between;
     width : calc(100% / 3 - 110px);
-    margin 
+    margin-bottom: 65px;
+    margin-top: 65px;
 }
 
-.menu-section .menu-list .menu-item .menu-image-1 {
+.menu-section .menu-list .menu-item .menu-image {
     max-width: 80%;
-    aspect-ratio: 1 / 1    ;
+    aspect-ratio : 1 ;    
+    margin-bottom: 25px;
+    object-fit: contain ;
 }
+
+.menu-section .menu-list .menu-item .name {
+    margin : 12px 0;
+    font-size : 18px ;
+    font-weight : 500 ;
+
+}
+.menu-section .menu-list .menu-item .text {
+    font-size: 14px ;
+    text-align: center ;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-section .title {
+    padding: 120px 0 85px ;
+}
+
+.testimonial-section .section-container .slider-container .testimonial-item  {
+    display: flex ;
+    justify-content: center;
+    overflow-x: auto ;
+    padding-bottom: 100px ;
+    gap: 50px;
+  
+}
+
+.testimonial-section .section-container .slider-container .testimonial-item .user-img {
+    width: 80px ;
+    height: 80px ;
+    border-radius: 50% ;
+    object-fit: cover ;
+    margin: 0 auto;
+}
+
+.testimonial-section .section-container .slider-container .testimonial-item .name {
+    text-align:center ;
+    margin-top: 25px ; 
+
+}
+
+.testimonial-section .section-container .slider-container .testimonial-item .text {
+    text-align: center ;
+    margin-top: 15px ;
+    font-size : 14px ;
+
+}
+
+
+
 
 @media screen and (max-width:1024px){
-    .menu-section .menu-list .menu-item {
+
+    .menu-section .menu-list {
+        gap : 30px ; 
 
     }
-}
 
+    .menu-section .menu-list .menu-item {
+        width : calc(100% / 2 - 30px) ;
+    }
+
+    .menu-section .menu-list .menu-item .menu-image {
+        max-width: 150px;
+    }
+
+     .testimonial-section .section-container  .testimonial-item {
+        gap: 30px ; 
+    }
+
+    .testimonial-section .section-container  .testimonial-item .testimonial {
+        width :100% ; 
+       
+    } 
+}
+  
+@media screen and (max-width: 640px){
+
+
+
+    .menu-section .menu-list {
+        gap : 60px ; 
+    }
+
+
+    .menu-section .menu-list .menu-item {
+        width : 100% ;
+    }
+}
 
 @media screen and (max-width:900px){
 
